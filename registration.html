@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Üye Ol</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Çağdaş Yurtseven Kişisel Web Sitesi">
+		<meta name="author" content="Çağdaş Yurtseven">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+
+	<body>
+		<h1>Üye Ol</h1>
+		<ul>
+			<li> <a href="index.html"> Özgeçmişim </a> </li>
+			<li> <a href="hobbies.html"> Hobilerim </a> </li>
+			<li> <a href="my_family.html"> Ailem Hakkında</a> </li>
+			<li> <a href="hometown.html"> Sinop </a> </li>
+			<li> <a href="picture_gallery.html"> Fotoğraflarım </a> </li>
+			<li> <a href="contact_me.html"> İletişim </a> </li>
+			<li> <a href="registration.html"> Üye Ol</a> </li>
+		</ul>
+		<hr>
+		
+		<form method="POST">
+
+				<label for="email">E-mail: </label>
+				<input type="email" name="email" required><br>
+					
+				<label for="pass">Şifre:</label>
+				<input type="password" name="pass" required><br>
+				
+				<label for="birthday">Doğum Tarihi:</label>
+				<input type="date" name="birthday" required><br>
+				
+				Şehir: <select name="city">
+					<option>Eskişehir</option>
+					<option>İstanbul</option>
+					<option>Ankara</option>
+					<option>Diğer</option>
+				</select><br>
+				
+				<label for="name">Ad Soyad: </label>
+				<input type="name" name="name" maxlength="20" required><br>
+				
+				<textarea rows="3" cols="60" name="feedback" required> Lütfen kendi hakkınızda birşeyler yazın!
+					</textarea>
+					
+				<p>Bir profil fotoğrafı seçin</p>
+			    <input type="file" name="fileToUpload"><br><br>
+				
+				Cinsiyet:
+				<input type="radio" name="iq" value="male"> Erkek 
+				<input type="radio" name="iq" value="female" checked> Kadın <br><br>
+				
+			İlgi alanları: <br>
+		    <input type="checkbox" name="item1" value="sport">Spor <br> 
+		    <input type="checkbox" name="item2" value="technology">Teknoloji<br> 
+		    <input type="checkbox" name="item3" value="photography">Fotoğrafçılık <br> 
+			<input type="checkbox" name="item4" value="movie">Sinema <br> <br>		
+			<input type="submit" onclick="return alert('Üye olduğunuz için teşekkürler')" value="Üye ol">
+					
+		</form>	
+		
+		
+	</body>
+</html>
